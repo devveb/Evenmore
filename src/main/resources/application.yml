@@ -1,0 +1,13 @@
+server:
+  port: 28083
+  tomcat:
+    uri-encoding: UTF-8
+
+spring:
+  profiles:
+    active: office
+
+
+mybatis:
+  mapper-locations: classpath*:sql/*.xml
+
