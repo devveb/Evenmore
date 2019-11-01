@@ -4,4 +4,9 @@
     <select id="getDBHealthy" resultType="int">
         select count(*) from wslt.short_url
     </select>
+
+    <insert id="insertEventPlan" parameterType="Map">
+        insert into evenmore_ask(nameInCharge,email,phoneNm,msg)
+        VALUES (#{name},#{email},#{phone},#{msg})
+    </insert>
 </mapper>
