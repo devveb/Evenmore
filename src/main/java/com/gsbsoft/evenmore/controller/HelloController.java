@@ -4,6 +4,7 @@ package com.gsbsoft.evenmore.controller;
 import com.gsbsoft.evenmore.service.HelloService;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.ResponseBody;
 
 import javax.servlet.http.HttpServletRequest;
 
@@ -23,9 +24,10 @@ public class HelloController {
     }
 
     @RequestMapping("/sendEst")
+    @ResponseBody
     public String sendEventAbout(HttpServletRequest req){
         helloService.insertEventPlan(req);
-        return "index";
+        return "200";
     }
 
 

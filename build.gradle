@@ -5,7 +5,7 @@ plugins {
 }
 
 group = 'com.gsbsoft.evenmore'
-version = 'EM.0.0.1'
+version = 'EM.0.0.2'
 sourceCompatibility = '1.8'
 
 configurations {
@@ -23,6 +23,7 @@ dependencies {
 	implementation 'org.springframework.boot:spring-boot-starter-web'
 	implementation 'org.mybatis.spring.boot:mybatis-spring-boot-starter:2.1.1'
 	implementation 'org.springframework.session:spring-session-core'
+	compile 'javax.mail:mail:1.4.7'
 	compileOnly 'org.projectlombok:lombok'
 	runtimeOnly 'org.mariadb.jdbc:mariadb-java-client:2.1.2'
 

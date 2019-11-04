@@ -6,7 +6,7 @@
     </select>
 
     <insert id="insertEventPlan" parameterType="Map">
-        insert into evenmore_ask(nameInCharge,email,phoneNm,msg)
-        VALUES (#{name},#{email},#{phone},#{msg})
+        insert into evenmore_ask(nameInCharge,company,email,category,budget,msg)
+        VALUES (#{name},#{company},#{email},#{category},#{budget},#{msg})
     </insert>
 </mapper>
